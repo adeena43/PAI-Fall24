@@ -1,26 +1,27 @@
 l = [34, 67, 42, 23, 50]
-sum = 0
-max = 0
-min = 0
-for i in l:
-    sum = sum+i
 
-avg = sum/len(l)
+total_sum = 0
+for i in l:
+    total_sum += i
+
+avg = total_sum / len(l)
 print(f"Average: {avg}")
+
+max_val = l[0]  
 for i in l:
-    if i>max: 
-        max = i 
+    if i > max_val:
+        max_val = i
 
-print(f"Maximum is: {max}")
+print(f"Maximum is: {max_val}")
 
+min_val = l[0]  
 for i in l:
-    if i<min: 
-        min = i 
+    if i < min_val:
+        min_val = i
 
-print(f"Minimum is: {min}")
+print(f"Minimum is: {min_val}")
 
-l = l.sort()
+l.sort()  # This sorts the list in place
 print(f"Sorted list: {l}")
-
-l = l.pop(2)
-print(f"Removed third element from the lis: {l}")
+removed_element = l.pop(2)  
+print(f"Removed third element from the list: {removed_element}")
