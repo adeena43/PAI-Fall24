@@ -10,5 +10,5 @@ df["Gender"][df["Gender"]==1] = "male"
 
 print(df.groupby('Gender').mean())
 
-print(df.groupby('chol').max())
+print((df['chol']).max())
 print(df)
