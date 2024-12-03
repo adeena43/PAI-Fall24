@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score
 import matplotlib.pyplot as plt
 
 # Load the dataset
-file_path = "heart (1).csv"  # Update this with the correct file path
+file_path = "heart.csv"  
 heart_data = pd.read_csv(file_path)
 
 # Separate features (X) and target (y)
